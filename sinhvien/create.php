@@ -26,6 +26,7 @@
         }
         input[type="text"],
         input[type="date"],
+        select,
         input[type="file"] {
             padding: 6px;
             border: 1px solid #ddd;
@@ -99,7 +100,10 @@
         
         <div class="form-group">
             <label for="GioiTinh">Giới Tính:</label>
-            <input type="text" id="GioiTinh" name="GioiTinh">
+            <select name="gioiTinh" id="GioiTinh">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+            </select>
         </div>
         
         <div class="form-group">

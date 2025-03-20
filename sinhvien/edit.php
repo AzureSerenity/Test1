@@ -26,6 +26,7 @@
         }
         input[type="text"],
         input[type="number"],
+        select,
         input[type="date"],
         input[type="file"] {
             padding: 6px;
@@ -108,7 +109,10 @@
         
         <div class="form-group">
             <label for="GioiTinh">Giới Tính:</label>
-            <input type="text" id="GioiTinh" name="GioiTinh" value="<?= $sv["GioiTinh"] ?>">
+            <select name="GioiTinh" id="GioiTinh">
+                <option value="Nam" <?= $sv["GioiTinh"] == "Nam" ? "selected" : "" ?>>Nam</option>
+                <option value="Nữ" <?= $sv["GioiTinh"] == "Nữ" ? "selected" : "" ?>>Nữ</option>
+            </select>
         </div>
         
         <div class="form-group">
